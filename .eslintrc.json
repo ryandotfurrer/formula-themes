@@ -12,7 +12,7 @@
     "react/no-unknown-property": ["error", { "ignore": ["jsx"] }],
     "prefer-const": "warn",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"]
+    "quotes": ["warn", "double"],
+    "semi": ["warn", "always"]
   }
 }
