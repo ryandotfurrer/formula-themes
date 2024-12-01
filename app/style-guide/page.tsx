@@ -50,18 +50,6 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <footer>
-        <p>
-          &copy; 2024{" "}
-          <LinkCustom
-            href="https://ryanfurrer.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ryan Furrer
-          </LinkCustom>
-        </p>
-      </footer>
     </div>
   );
 }

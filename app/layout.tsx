@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import Link from "next/link";
+import localFont from "next/font/local";
+import type { Metadata } from "next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,18 @@ export default function RootLayout({
         <div className="container mx-auto px-4">
           <Navbar />
           {children}
+      <footer>
+        <p>
+          &copy; 2024{" "}
+          <Link
+            href="https://ryanfurrer.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ryan Furrer
+          </Link>
+          </p>
+        </footer>
         </div>
       </body>
     </html>
