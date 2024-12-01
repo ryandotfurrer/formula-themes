@@ -1,5 +1,5 @@
-import { Heading } from "@/components/ui/heading";
-import { LinkCustom } from "@/components/ui/link-custom";
+import { Heading } from "@/components/heading";
+import { LinkCustom } from "@/components/link-custom";
 
 export default function Home() {
   return (

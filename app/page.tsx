@@ -1,5 +1,5 @@
-import { Heading } from "@/components/ui/heading";
-import { LinkCustom } from "@/components/ui/link-custom";
+import { Heading } from "@/components/heading";
+import { LinkCustom } from "@/components/link-custom";
 
 export default function Home() {
   return (
@@ -54,6 +54,25 @@ export default function Home() {
               #63
             </span>
           </div>
+        </section>
+        <section>
+          //TODO: Add demonstrations for all UI components
+          //TODO: Accordion
+          //TODO: Alert
+          //TODO: Alert Dialog
+          //TODO: Button
+          //TODO: Calendar
+          //TODO: Card
+          //TODO: Dialog
+          //TODO: Heading
+          //TODO: Popover
+          //TODO: Progress
+          //TODO: Radio Group
+          //TODO: Select
+          //TODO: Slider
+          //TODO: Sonner (Toast)
+          //TODO: Switch
+          //TODO: Tabs
         </section>
         <section id="get-the-code">
           <Heading level="h2" size="3xl">Get the code</Heading>

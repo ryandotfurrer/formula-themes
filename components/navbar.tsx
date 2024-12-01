@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { DialogTitle } from "@radix-ui/react-dialog"
-import { LinkCustom } from "./ui/link-custom"
+import { LinkCustom } from "./link-custom"
 import { Menu } from "lucide-react"
 import Link from "next/link"
 import React, { useState } from "react"
