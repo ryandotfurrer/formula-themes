@@ -37,7 +37,11 @@ export const Heading = ({
     {
       "tracking-tighter": size === "4xl" || size === "3xl" || size === "2xl",
       "tracking-tight": size === "xl" || size === "lg",
-    },
+    }
   );
-  return <HeadingTag className={clsx(headingClassNames, className)}>{children}</HeadingTag>;
+  return (
+    <HeadingTag className={clsx(headingClassNames, className)}>
+      {children}
+    </HeadingTag>
+  );
 };

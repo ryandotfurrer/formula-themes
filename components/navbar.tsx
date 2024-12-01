@@ -1,20 +1,16 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { DialogTitle } from "@radix-ui/react-dialog"
-import { LinkCustom } from "./link-custom"
-import { Menu } from "lucide-react"
-import Link from "next/link"
-import React, { useState } from "react"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { DialogTitle } from "@radix-ui/react-dialog";
+import { LinkCustom } from "./link-custom";
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import React, { useState } from "react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full">
@@ -26,8 +22,12 @@ export function Navbar() {
           <Link href="#">About</Link>
           <Link href="#">Products</Link>
           <Link href="#">Contact</Link>
-          <LinkCustom href="#" variant='outlineLinkButton' size='default'>Login</LinkCustom>
-          <LinkCustom href="#" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
+          <LinkCustom href="#" variant="outlineLinkButton" size="default">
+            Login
+          </LinkCustom>
+          <LinkCustom href="#" variant="defaultLinkButton" size="default">
+            Sign Up
+          </LinkCustom>
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
@@ -51,20 +51,25 @@ export function Navbar() {
               <MobileLink href="#" onOpenChange={setIsOpen}>
                 Contact
               </MobileLink>
-              <LinkCustom href="#" variant='outlineLinkButton' size='default'>Login</LinkCustom>
-              <LinkCustom href="#" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
+              <LinkCustom href="#" variant="outlineLinkButton" size="default">
+                Login
+              </LinkCustom>
+              <LinkCustom href="#" variant="defaultLinkButton" size="default">
+                Sign Up
+              </LinkCustom>
             </div>
           </SheetContent>
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
 
-interface MobileLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  onOpenChange?: (open: boolean) => void
-  children: React.ReactNode
-  className?: string
+interface MobileLinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  onOpenChange?: (open: boolean) => void;
+  children: React.ReactNode;
+  className?: string;
 }
 
 function MobileLink({
@@ -78,13 +83,12 @@ function MobileLink({
     <Link
       href="#"
       onClick={() => {
-        onOpenChange?.(false)
+        onOpenChange?.(false);
       }}
       className={cn(className)}
       {...props}
     >
       {children}
     </Link>
-  )
+  );
 }
-

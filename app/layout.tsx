@@ -27,22 +27,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <div className="container mx-auto px-4 text-pretty">
           <Navbar />
           {children}
           <footer className="container">
             <p>
               &copy; 2024{" "}
-          <Link
-            href="https://ryanfurrer.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ryan Furrer
-          </Link>
-          </p>
-        </footer>
+              <Link
+                href="https://ryanfurrer.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ryan Furrer
+              </Link>
+            </p>
+          </footer>
         </div>
       </body>
     </html>
