@@ -3,6 +3,7 @@ import clsx from "clsx";
 export type HeadingProps = {
   align?: "left" | "center" | "right";
   children: React.ReactNode;
+  className?: string;
   level: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   size?: "sm" | "base" | "lg" | "xl" | "2xl" | "3xl" | "4xl";
 };
@@ -10,6 +11,7 @@ export type HeadingProps = {
 export const Heading = ({
   align = "left",
   children,
+  className,
   level,
   size = "base",
 }: HeadingProps) => {
@@ -37,5 +39,5 @@ export const Heading = ({
       "tracking-tight": size === "xl" || size === "lg",
     },
   );
-  return <HeadingTag className={headingClassNames}>{children}</HeadingTag>;
+  return <HeadingTag className={clsx(headingClassNames, className)}>{children}</HeadingTag>;
 };

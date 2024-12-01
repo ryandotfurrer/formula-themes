@@ -23,11 +23,11 @@ export function Navbar() {
           <span className="font-bold">Formula Themes</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-4 text-sm font-medium">
-          <Link href="/about">About</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/contact">Contact</Link>
-          <LinkCustom href="/login" variant='outlineLinkButton' size='default'>Login</LinkCustom>
-          <LinkCustom href="/signup" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
+          <Link href="#">About</Link>
+          <Link href="#">Products</Link>
+          <Link href="#">Contact</Link>
+          <LinkCustom href="#" variant='outlineLinkButton' size='default'>Login</LinkCustom>
+          <LinkCustom href="#" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
@@ -42,17 +42,17 @@ export function Navbar() {
           <SheetContent side="right">
             <DialogTitle className="sr-only">Mobile Menu</DialogTitle>
             <div className="flex flex-col space-y-3 mt-4">
-              <MobileLink href="/about" onOpenChange={setIsOpen}>
+              <MobileLink href="#" onOpenChange={setIsOpen}>
                 About
               </MobileLink>
-              <MobileLink href="/products" onOpenChange={setIsOpen}>
+              <MobileLink href="#" onOpenChange={setIsOpen}>
                 Products
               </MobileLink>
-              <MobileLink href="/contact" onOpenChange={setIsOpen}>
+              <MobileLink href="#" onOpenChange={setIsOpen}>
                 Contact
               </MobileLink>
-              <LinkCustom href="/login" variant='outlineLinkButton' size='default'>Login</LinkCustom>
-              <LinkCustom href="/signup" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
+              <LinkCustom href="#" variant='outlineLinkButton' size='default'>Login</LinkCustom>
+              <LinkCustom href="#" variant='defaultLinkButton' size='default'>Sign Up</LinkCustom>
             </div>
           </SheetContent>
         </Sheet>
