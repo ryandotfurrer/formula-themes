@@ -1,15 +1,15 @@
-{
-  "extends": ["next/core-web-vitals", "next/typescript"],
-  "rules": {
-    "no-unused-vars": "warn",
-    "no-console": ["warn", { "allow": ["warn", "error"] }],
-    "@typescript-eslint/no-explicit-any": "warn",
-    "react/no-unescaped-entities": "off",
-    "react/display-name": "off",
-    "react/no-unknown-property": ["error", { "ignore": ["jsx"] }],
-    "prefer-const": "warn",
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
-    "quotes": ["warn", "double"],
-    "semi": ["warn", "always"]
-  }
-}
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"],
+//   "rules": {
+//     "no-unused-vars": "warn",
+//     "no-console": ["warn", { "allow": ["warn", "error"] }],
+//     "@typescript-eslint/no-explicit-any": "warn",
+//     "react/no-unescaped-entities": "off",
+//     "react/display-name": "off",
+//     "react/no-unknown-property": ["error", { "ignore": ["jsx"] }],
+//     "prefer-const": "warn",
+//     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+//     "quotes": ["warn", "double"],
+//     "semi": ["warn", "always"]
+//   }
+// }
